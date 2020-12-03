@@ -1,8 +1,7 @@
 #include "mainwindow.h"
-
 #include <QApplication>
-#include "CONNEXION.h"
-
+#include <QMessageBox>
+#include "connexion.h"
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -10,20 +9,18 @@ int main(int argc, char *argv[])
     Connection c;
     bool test=c.createconnect();
     if(test)
-    {
-        QMessageBox::information(nullptr, QObject::tr("database is open"),
-                    QObject::tr("connection successful.\n"
+    {w.show();
+        QMessageBox::critical(nullptr, QObject::tr("database is open"),
+                    QObject::tr("connexion successful.\n"
                                 "Click Cancel to exit."), QMessageBox::Cancel);
 
 }
     else
         QMessageBox::critical(nullptr, QObject::tr("database is not open"),
-                    QObject::tr("connection failed.\n"
+                    QObject::tr("connexion failed.\n"
                                 "Click Cancel to exit."), QMessageBox::Cancel);
 
 
 
-
-    w.show();
     return a.exec();
 }
