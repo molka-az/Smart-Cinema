@@ -2091,7 +2091,7 @@ PlotWidget {
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="salles">
      <attribute name="title">
@@ -2465,7 +2465,7 @@ PlotWidget {
        </rect>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="ajoutmat">
        <attribute name="title">

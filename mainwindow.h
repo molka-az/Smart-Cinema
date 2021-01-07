@@ -4,6 +4,10 @@
 #include"materiels.h"
 #include<QMessageBox>
 #include <QMainWindow>
+#include <QString>
+#include<QVariant>
+#include<QSqlQuery>
+#include<QSqlQueryModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -46,7 +50,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    salles tempsalles;
+    salles tempSal;
     materiels tempmat;
 };
 #endif // MAINWINDOW_H
